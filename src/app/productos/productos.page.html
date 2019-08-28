@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Productos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-searchbar></ion-searchbar>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col [size]='prod.size' *ngFor="let prod of productsList">
+
+      <ion-card class='productscard' [routerLink]="prod.redirectTo">
+        <img class='productosimagen' [src]="prod.img">
+        <ion-label class="productstexto">{{ prod.titulo }}</ion-label>
+      </ion-card>
+
+     </ion-col>
+     
+    </ion-row>
+  </ion-grid>
+
+
+
+
+
+
+
+
+</ion-content>

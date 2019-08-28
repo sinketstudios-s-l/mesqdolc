@@ -1,14 +1,25 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Mes Q Dolç
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <img class = "logo" src="../assets/img/logo (1).jpg" alt="">
   </div>
+      
+  <ion-segment mode="md" (ionChange)="segmentChanged($event)">
+      <ion-segment-button mode="md" value="friends">
+        <ion-label>Friends</ion-label>
+      </ion-segment-button>
+      <ion-segment-button mode="md" value="enemies">
+        <ion-label>Enemies</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
 </ion-content>
